@@ -1,3 +1,4 @@
+<!-- ✅ FINAL UPDATED index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +14,25 @@
   </header>
 
   <div class="layout">
+    <!-- Collapsible Sidebar -->
     <aside class="sidebar open" id="sidebar">
-      <button id="toggleSidebar">☰</button>
-      <div>Menu</div>
+      <button id="toggleSidebar">☰ Menu</button>
+      <ul>
+        <li>Chats</li>
+        <li>Help</li>
+      </ul>
     </aside>
 
+    <!-- Main Chat Area -->
     <main class="chat-container">
       <div class="chat-header">
         <img src="https://i.pravatar.cc/40" alt="User" />
-        <h2>Support Bot</h2>
+        <div>
+          <h2>Support Bot</h2>
+          <span class="status">
+            <span class="dot"></span> Online
+          </span>
+        </div>
       </div>
 
       <div class="chat-box" id="chat-box"></div>
@@ -33,11 +44,14 @@
       </div>
     </main>
 
-    <aside class="right-panel">Info Panel</aside>
+    <!-- Info Panel -->
+    <aside class="right-panel">
+      <h3>Chat Info</h3>
+      <p>This is a dummy support bot interface built for frontend evaluation.</p>
+    </aside>
   </div>
 
   <footer class="footer">© 2025 Chat App</footer>
-
   <script src="script.js"></script>
 </body>
 </html>
